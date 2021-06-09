@@ -1,0 +1,36 @@
+@import '../../styles/theme.less';
+.layout{
+    background: #f5f7f9;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+.ivu-layout.ivu-layout-has-sider{
+    height: 100vh;
+}
+.layout-header-bar{
+    text-align: left;
+}
+.layout-header-bar{
+    background-color: @themeColor;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+
+#section{
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - 95px);
+}
+.section-right{
+    width: calc(100% - 200px);
+}
+
+#footer>h2{
+    text-align: center;
+    line-height: 45px;        
+    color: #fff;
+    font-size: 20px;
+    background-color: @themeColor;
+}

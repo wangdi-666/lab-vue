@@ -1,0 +1,66 @@
+@import '../../styles/theme.less';
+.headbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 50px;
+    background-color: @themeColor;
+}
+// logo和标题
+.logo{
+    width: 50%;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    >img{
+       width: 40px;
+    }
+    >h1{
+        margin-left: 20px;
+        font-size: 20px;
+        color: #fff;align-self: center;
+    }
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    cursor: pointer;
+}
+.change,.settings,.top,.name,.exit{
+    margin-right: 15px;
+}
+.we{
+    width: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.ul{
+    box-shadow: 0cm;
+    list-style: none;
+    position: absolute;
+    top: 8%;
+    width: 80px;
+    right: 6%;
+    background: white; 
+    border: 1px solid #f1f1f1;
+    z-index: 100;
+    padding: 2px;
+    color: black;
+    text-align: center;
+    padding: 0 !important;margin: 0 !important;
+}
+.ul li{
+    padding: 0 !important;margin: 0 !important;
+}
+.ul li:first-child{
+    border-bottom: 1px solid #f1f1f1;
+}
+.ul li:hover{
+    color: @themeColor;
+}
+.ivu-layout-header{
+    line-height: initial !important;
+}
