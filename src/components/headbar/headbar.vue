@@ -21,7 +21,6 @@
 	import screen from '@/components/headbar/allscreen/screen';
 	import pwd from "./component/pwd";
 	import { SYSTEM_NAME} from '@/config/config.js';
-	import { apiOutLogin} from '@/API/login/index.js';
 	export default{
 		components:{
 			 screen,

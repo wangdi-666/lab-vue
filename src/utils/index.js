@@ -1,4 +1,3 @@
-import store from '../store'
 
 export const getTableH = (tags = []) => {//获取表格高度，接受计算差值的数组class名称
     const HEADER_H = document.getElementsByClassName('headbar')[0].clientHeight;

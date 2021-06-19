@@ -68,16 +68,3 @@ router.beforeEach((to, from, next) => {
 
 export default instance;
 
-const File = (url, params) => {//下载文件
-    document.body.appendChild((() => {
-        let iframe = document.createElement('iframe')
-        iframe.style.display = 'none'
-        iframe.src = url + "?" + qs.stringify(params)
-        iframe.onload = () => document.body.removeChild(iframe)
-        return iframe;
-    })())
-}
-
-const Link = (url, params) => {//打开新连接 新窗口预览图片
-    window.open(url + "?" + qs.stringify(params));
-}
